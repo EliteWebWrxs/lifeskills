@@ -136,7 +136,8 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} LifeSkills CPR. All rights reserved.
+              © {new Date().getFullYear()} Life Skills Training Network. All
+              rights reserved.
             </div>
 
             {/* Social Links */}
