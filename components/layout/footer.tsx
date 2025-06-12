@@ -22,9 +22,9 @@ const navigation = {
   ],
   training: [
     { name: "CPR Certification", href: "/training#cpr" },
-    { name: "First Aid", href: "/training#first-aid" },
-    { name: "Life Skills", href: "/training#life-skills" },
-    { name: "Workplace Safety", href: "/training#workplace" },
+    // { name: "First Aid", href: "/training#first-aid" },
+    // { name: "Life Skills", href: "/training#life-skills" },
+    // { name: "Workplace Safety", href: "/training#workplace" },
   ],
   legal: [
     { name: "Privacy Policy", href: "/privacy" },
