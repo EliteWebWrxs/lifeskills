@@ -4,13 +4,14 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Heart, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Training", href: "/training" },
-  { name: "Blog", href: "/blog" },
+  { name: "Blog", href: "/posts" },
 ];
 
 export default function Header() {
@@ -19,13 +20,16 @@ export default function Header() {
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <Heart className="h-8 w-8 text-red-500" />
-            <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              LifeSkills CPR
-            </span>
+            <Image
+              src="./lifeSkillsLogo.webp"
+              alt="Life Skills Training Network"
+              width={300}
+              height={300}
+              className="h-20 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -39,7 +43,7 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+            <Button className="bg-gradient-to-r from-dangerRed to-orange-400 hover:from-dangerRed hover:to-orange-700">
               Get Started
             </Button>
           </nav>
@@ -69,7 +73,7 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 w-fit">
+              <Button className="bg-gradient-to-r from-dangerRed to-orange-400 hover:from-blue-700 hover:to-purple-700 w-fit">
                 Get Started
               </Button>
             </nav>

@@ -46,8 +46,8 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
           >
             Master{" "}
-            <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
-              Life-Saving
+            <span className="bg-gradient-to-r from-dangerRed to-orange-400 bg-clip-text text-transparent">
+              Life Saving
             </span>{" "}
             Skills
           </motion.h1>
@@ -105,7 +105,7 @@ export default function Hero() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-blue-600 hover:bg-white hover:text-blue-600 font-semibold px-8 py-4 text-lg"
+                className="border-white text-blue-600 hover:bg-blue-50 hover:text-blue-600 font-semibold px-8 py-4 text-lg"
               >
                 Learn More
               </Button>

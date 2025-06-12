@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import {
   Heart,
   Phone,
@@ -17,7 +18,7 @@ const navigation = {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Training", href: "/training" },
-    { name: "Blog", href: "/blog" },
+    { name: "Blog", href: "/posts" },
   ],
   training: [
     { name: "CPR Certification", href: "/training#cpr" },
@@ -28,7 +29,7 @@ const navigation = {
   legal: [
     { name: "Privacy Policy", href: "/privacy" },
     { name: "Terms of Service", href: "/terms" },
-    { name: "Refund Policy", href: "/refund" },
+    // { name: "Refund Policy", href: "/refund" },
   ],
   social: [
     { name: "Facebook", href: "#", icon: Facebook },
@@ -46,8 +47,13 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-6">
-              <Heart className="h-8 w-8 text-red-500" />
-              <span className="text-xl font-bold">LifeSkills CPR</span>
+              <Image
+                src="./lifeSkillsLogo.webp"
+                alt="Life Skills Training Network"
+                width={300}
+                height={300}
+                className="h-32 w-auto object-contain"
+              />
             </Link>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Professional life skills and CPR training to empower individuals
@@ -56,15 +62,19 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-400">
                 <Phone className="h-4 w-4" />
-                <span>(555) 123-4567</span>
+                <a href="tel:8134330688">(813) 433-0688</a>
               </div>
               <div className="flex items-center gap-3 text-gray-400">
                 <Mail className="h-4 w-4" />
-                <span>info@lifeskillscpr.com</span>
+                <a href="mailto:info@mylifeskills.org">
+                  info@lifeskillscpr.com
+                </a>
               </div>
               <div className="flex items-center gap-3 text-gray-400">
                 <MapPin className="h-4 w-4" />
-                <span>123 Training Center Ave, City, ST 12345</span>
+                <span>
+                  13194 U. S. Highway 301 S Suite 170, Riverview, FL 33578
+                </span>
               </div>
             </div>
           </div>

@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://lifeskillscpr.com",
+    url: "https://www.mylifeskills.org",
     title: "LifeSkills CPR | Professional Training & Certification",
     description:
       "Professional life skills and CPR training courses. Get certified with expert instruction.",
@@ -44,10 +44,6 @@ export const metadata: Metadata = {
     title: "LifeSkills CPR | Professional Training & Certification",
     description:
       "Professional life skills and CPR training courses. Get certified with expert instruction.",
-    creator: "@lifeskillscpr",
-  },
-  verification: {
-    google: "your-google-verification-code",
   },
 };
 
@@ -60,7 +56,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <main className="pt-16">{children}</main>
+        <main className="pt-8">{children}</main>
         <Footer />
       </body>
     </html>

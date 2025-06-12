@@ -77,7 +77,7 @@ export default function CTA() {
             </Button>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
@@ -92,7 +92,7 @@ export default function CTA() {
               <Mail className="h-5 w-5" />
               <span>info@lifeskillscpr.com</span>
             </div>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>
