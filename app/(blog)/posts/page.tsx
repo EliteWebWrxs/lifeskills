@@ -46,7 +46,7 @@ export default async function Page() {
           <section className="bg-muted/50 py-16">
             <div className="container mx-auto px-4">
               <h2 className="mb-12 text-3xl font-bold tracking-tight md:text-4xl">
-                More Stories
+                More Posts
               </h2>
               <Suspense
                 fallback={
