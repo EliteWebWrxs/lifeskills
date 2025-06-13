@@ -125,7 +125,7 @@ export default function Footer() {
                 placeholder="Enter your email"
                 className="px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"
               />
-              <button className="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-lg font-medium transition-colors">
+              <button className="px-4 py-2 bg-gradient-to-r from-dangerRed to-orange-400 hover:from-dangerRed hover:to-orange-700 rounded-lg font-medium transition-colors">
                 Subscribe
               </button>
             </div>

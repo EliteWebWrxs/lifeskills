@@ -117,7 +117,7 @@ export default function TrainingPage({ courses }: { courses: any }) {
         >
           {courses.map((course: any, index: any) => (
             <motion.div
-              key={course.id}
+              key={course._id}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 * index }}

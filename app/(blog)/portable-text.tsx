@@ -23,13 +23,20 @@ export default function CustomPortableText({
 }) {
   const components: PortableTextComponents = {
     block: {
+      h1: ({ children }) => (
+        <h1 className="mb-4 text-3xl font-bold">{children}</h1>
+      ),
+      h2: ({ children }) => (
+        <h2 className="mt-4 mb-4 text-2xl font-semibold">{children}</h2>
+      ),
       h5: ({ children }) => (
-        <h5 className="mb-2 text-sm font-semibold">{children}</h5>
+        <h5 className="mt-4 mb-4 text-base font-semibold">{children}</h5>
       ),
       h6: ({ children }) => (
-        <h6 className="mb-1 text-xs font-semibold">{children}</h6>
+        <h6 className="mt-3 mb-3 text-sm font-medium">{children}</h6>
       ),
     },
+
     marks: {
       link: ({ children, value }) => {
         return (
