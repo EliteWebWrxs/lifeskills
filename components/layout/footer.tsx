@@ -18,7 +18,7 @@ import { useState } from "react";
 const navigation = {
   main: [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
+    { name: "About Us", href: "/about-us" },
     { name: "Training", href: "/training" },
     { name: "Blog", href: "/posts" },
   ],
@@ -229,6 +229,7 @@ export default function Footer() {
                   key={item.name}
                   href={item.href}
                   className="text-gray-400 hover:text-white transition-colors"
+                  aria-label={item.name}
                 >
                   <item.icon className="h-5 w-5" />
                 </Link>

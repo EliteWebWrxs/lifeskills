@@ -8,27 +8,21 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
-// export async function generateMetadata(
-//   { params }: Props,
-//   parent: ResolvingMetadata,
-// ): Promise<Metadata> {
-//   const post = await sanityFetch({
-//     query: postQuery,
-//     params,
-//     stega: false,
-//   });
-//   const previousImages = (await parent).openGraph?.images || [];
-//   const ogImage = resolveOpenGraphImage(post?.coverImage);
-
-//   return {
-//     authors: post?.author?.name ? [{ name: post?.author?.name }] : [],
-//     title: post?.title,
-//     description: post?.excerpt,
-//     openGraph: {
-//       images: ogImage ? [ogImage, ...previousImages] : previousImages,
-//     },
-//   } satisfies Metadata;
-// }
+export const metadata: Metadata = {
+  title: "CPR & Life Skills Training | Get Certified with Expert Instructors",
+  description:
+    "Join our hands-on CPR and life skills training programs. Get certified, gain confidence, and be prepared to save lives in critical moments.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.mylifeskills.org/training",
+    title: "CPR & Life Skills Training | Get Certified with Expert Instructors",
+    description:
+      "Join our hands-on CPR and life skills training programs. Get certified, gain confidence, and be prepared to save lives in critical moments.",
+    siteName: "Life Skills Training Network",
+    images: ["https://lifeskills.vercel.app/lifeSkillsLogo.webp"],
+  },
+};
 
 export default async function Training({ params }: Props) {
   const [data] = await Promise.all([

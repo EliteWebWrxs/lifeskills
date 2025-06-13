@@ -8,17 +8,14 @@ import Footer from "@/components/layout/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: {
-    default: "LifeSkills CPR | Professional Training & Certification",
-    template: "%s | LifeSkills CPR",
-  },
+  title: "Life Skills Training Network | Professional Training & Certification",
   description:
-    "Professional life skills and CPR training courses. Get certified with expert instruction in emergency response, first aid, and essential life competencies.",
+    "Master life saving skills with professional CPR training. Build confidence and competence to act when it matters most.",
   keywords:
     "CPR training, first aid, life skills, emergency response, certification, safety training, professional development",
-  authors: [{ name: "LifeSkills CPR Training Center" }],
-  creator: "LifeSkills CPR",
-  publisher: "LifeSkills CPR",
+  authors: [{ name: "Life Skills Training Network" }],
+  creator: "Life Skills Training Network",
+  publisher: "Life Skills Training Network",
   robots: {
     index: true,
     follow: true,
@@ -34,16 +31,19 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://www.mylifeskills.org",
-    title: "LifeSkills CPR | Professional Training & Certification",
+    title:
+      "Life Skills Training Network | Professional Training & Certification",
     description:
-      "Professional life skills and CPR training courses. Get certified with expert instruction.",
-    siteName: "LifeSkills CPR",
+      "Master life saving skills with professional CPR training. Build confidence and competence to act when it matters most.",
+    siteName: "Life Skills Training Network",
+    images: ["https://lifeskills.vercel.app/lifeSkillsLogo.webp"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "LifeSkills CPR | Professional Training & Certification",
+    title:
+      "Life Skills Training Network | Professional Training & Certification",
     description:
-      "Professional life skills and CPR training courses. Get certified with expert instruction.",
+      "Master life saving skills with professional CPR training. Build confidence and competence to act when it matters most.",
   },
 };
 

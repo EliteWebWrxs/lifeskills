@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import Avatar from "../avatar";
 import CoverImage from "../cover-image";
@@ -7,6 +8,22 @@ import MoreStories from "../more-stories";
 import type { HeroQueryResult } from "@/sanity.types";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { heroQuery, settingsQuery } from "@/sanity/lib/queries";
+
+export const metadata: Metadata = {
+  title: "Blog | Life Skills Training Network",
+  description:
+    "Learn what CPR is, how it works, and why it's a vital life-saving skill that everyone should know to respond confidently in emergencies.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.mylifeskills.org/posts",
+    title: "Blog | Life Skills Training Network",
+    description:
+      "Learn what CPR is, how it works, and why it's a vital life-saving skill that everyone should know to respond confidently in emergencies.",
+    siteName: "Life Skills Training Network",
+    images: ["https://lifeskills.vercel.app/lifeSkillsLogo.webp"],
+  },
+};
 
 export default async function Page() {
   const [settings, heroPost] = await Promise.all([

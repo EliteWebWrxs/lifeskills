@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
+  { name: "About Us", href: "/about-us" },
   { name: "Training", href: "/training" },
   { name: "Blog", href: "/posts" },
   { name: "Contact", href: "/contact" },
