@@ -68,31 +68,16 @@ export default function CTA() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-blue-600 hover:bg-white hover:text-blue-600 font-semibold px-8 py-4 text-lg"
-            >
-              Schedule Consultation
-            </Button>
+            <Link href="https://calendly.com/d/cwqg-bb6-9st">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-blue-600 hover:bg-white hover:text-blue-600 font-semibold px-8 py-4 text-lg"
+              >
+                Schedule Consultation
+              </Button>
+            </Link>
           </motion.div>
-
-          {/* <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            viewport={{ once: true }}
-            className="flex flex-col sm:flex-row gap-8 justify-center items-center text-blue-100"
-          >
-            <div className="flex items-center gap-2">
-              <Phone className="h-5 w-5" />
-              <span>(555) 123-4567</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Mail className="h-5 w-5" />
-              <span>info@lifeskillscpr.com</span>
-            </div>
-          </motion.div> */}
         </motion.div>
       </div>
     </section>

@@ -96,7 +96,7 @@ export default async function PostPage({ params }: Props) {
       </article>
       <aside>
         <hr className="border-accent-2 mb-24 mt-28" />
-        <h2 className="mb-8 text-6xl font-bold leading-tight tracking-tighter md:text-7xl">
+        <h2 className="mb-12 text-3xl font-bold tracking-tight md:text-4xl">
           Recent Posts
         </h2>
         <Suspense>
