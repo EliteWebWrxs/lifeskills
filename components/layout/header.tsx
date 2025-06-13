@@ -43,8 +43,13 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <Button className="bg-gradient-to-r from-dangerRed to-orange-400 hover:from-dangerRed hover:to-orange-700">
-              Get Started
+            <Button
+              asChild
+              className="bg-gradient-to-r from-dangerRed to-orange-400 hover:from-dangerRed hover:to-orange-700"
+            >
+              <Link href="https://calendly.com/d/cwqg-bb6-9st">
+                Get Started
+              </Link>
             </Button>
           </nav>
 
@@ -73,8 +78,13 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Button className="bg-gradient-to-r from-dangerRed to-orange-400 hover:from-blue-700 hover:to-purple-700 w-fit">
-                Get Started
+              <Button
+                asChild
+                className="bg-gradient-to-r from-dangerRed to-orange-400 hover:from-blue-700 hover:to-purple-700 w-fit"
+              >
+                <Link href="https://calendly.com/d/cwqg-bb6-9st">
+                  Get Started
+                </Link>
               </Button>
             </nav>
           </motion.div>

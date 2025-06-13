@@ -19,6 +19,7 @@ import { assistWithPresets } from "@/sanity/plugins/assist";
 import author from "@/sanity/schemas/documents/author";
 import post from "@/sanity/schemas/documents/post";
 import settings from "@/sanity/schemas/singletons/settings";
+import trainingProgram from "@/sanity/schemas/documents/trainingProgram";
 import { resolveHref } from "@/sanity/lib/utils";
 
 const homeLocation = {
@@ -37,6 +38,7 @@ export default defineConfig({
       // Documents
       post,
       author,
+      trainingProgram,
     ],
   },
   plugins: [

@@ -32,3 +32,19 @@ export const postQuery = defineQuery(`
     ${postFields}
   }
 `);
+
+export const trainingProgramsQuery = defineQuery(`
+  *[_type == "trainingProgram"]{
+    _id,
+    title,
+    description,
+    duration,
+    price,
+    level,
+    features,
+    icon,
+    color,
+    link,
+    "imageUrl": image.asset->url
+  } | order(_createdAt desc)
+`);
