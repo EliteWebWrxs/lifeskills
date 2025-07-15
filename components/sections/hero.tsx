@@ -59,9 +59,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Professional CPR training and essential life skills development.
-            Gain the confidence and competence to make a difference when it
-            matters most.
+            Essential life skills training and professional development.
           </motion.p>
 
           {/* Feature icons */}
@@ -82,6 +80,12 @@ export default function Hero() {
             <div className="flex flex-col items-center">
               <Users className="h-12 w-12 text-purple-400 mb-2" />
               <span className="text-sm text-blue-100">Life Skills</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <Users className="h-12 w-12 text-purple-400 mb-2" />
+              <span className="text-sm text-blue-100">
+                Professional Development
+              </span>
             </div>
           </motion.div>
 

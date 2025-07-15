@@ -48,9 +48,7 @@ export default function Header() {
               asChild
               className="bg-gradient-to-r from-dangerRed to-orange-400 hover:from-dangerRed hover:to-orange-700"
             >
-              <Link href="https://calendly.com/d/cwqg-bb6-9st">
-                Get Started
-              </Link>
+              <Link href="/training">Enroll</Link>
             </Button>
           </nav>
 
@@ -87,9 +85,7 @@ export default function Header() {
                 asChild
                 className="bg-gradient-to-r from-dangerRed to-orange-400 hover:from-blue-700 hover:to-purple-700 w-fit"
               >
-                <Link href="https://calendly.com/d/cwqg-bb6-9st">
-                  Get Started
-                </Link>
+                <Link href="/training">Enroll</Link>
               </Button>
             </nav>
           </motion.div>

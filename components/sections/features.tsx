@@ -9,7 +9,7 @@ const features = [
     icon: Heart,
     title: "CPR Certification",
     description:
-      "American Heart Association certified CPR training with hands-on practice and real-world scenarios.",
+      "Certified CPR training with hands-on practice and real-world scenarios.",
     color: "text-red-500",
     bgColor: "bg-red-50",
   },
@@ -17,7 +17,7 @@ const features = [
     icon: Shield,
     title: "First Aid Training",
     description:
-      "Comprehensive first aid skills including wound care, emergency assessment, and crisis response.",
+      "Comprehensive first aid skills including wound care, emergency assessment, sudden illness and crisis response.",
     color: "text-blue-500",
     bgColor: "bg-blue-50",
   },
@@ -47,9 +47,9 @@ const features = [
   },
   {
     icon: CheckCircle,
-    title: "Ongoing Support",
+    title: "Group Training",
     description:
-      "Continued access to resources, refresher courses, and expert guidance after certification.",
+      "Engage in dynamic group sessions that foster collaboration, shared learning, and community support.",
     color: "text-teal-500",
     bgColor: "bg-teal-50",
   },
