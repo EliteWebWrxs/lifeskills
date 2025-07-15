@@ -38,7 +38,7 @@ export default async function Page() {
       {/* Main Content */}
       <div className="flex-1 ">
         {/* Hero Section */}
-        <section className="container mx-auto px-4">
+        <section className="container mx-auto px-4 pb-4">
           {settings?.description && (
             <div className="mb-10 max-w-2xl">
               <p className="text-xl text-muted-foreground">

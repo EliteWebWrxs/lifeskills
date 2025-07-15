@@ -9,7 +9,7 @@ const features = [
     icon: Heart,
     title: "CPR Certification",
     description:
-      "Certified CPR training with hands-on practice and real-world scenarios.",
+      "Certified CPR training with hands on practice and real world scenarios.",
     color: "text-red-500",
     bgColor: "bg-red-50",
   },
@@ -25,7 +25,7 @@ const features = [
     icon: Users,
     title: "Life Skills Development",
     description:
-      "Essential life competencies including communication, problem-solving, and personal development.",
+      "Essential life competencies including communication, problem solving, and personal development.",
     color: "text-purple-500",
     bgColor: "bg-purple-50",
   },
@@ -33,7 +33,7 @@ const features = [
     icon: Award,
     title: "Professional Certification",
     description:
-      "Receive industry-recognized certifications upon successful completion of training programs.",
+      "Receive industry recognized certifications upon successful completion of training programs.",
     color: "text-green-500",
     bgColor: "bg-green-50",
   },
