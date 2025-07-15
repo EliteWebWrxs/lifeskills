@@ -42,39 +42,6 @@ export default defineConfig({
     ],
   },
   plugins: [
-    presentationTool({
-      resolve: {
-        mainDocuments: defineDocuments([
-          {
-            route: "/posts/:slug",
-            filter: `_type == "post" && slug.current == $slug`,
-          },
-        ]),
-        locations: {
-          settings: defineLocations({
-            locations: [homeLocation],
-            message: "This document is used on all pages",
-            tone: "caution",
-          }),
-          post: defineLocations({
-            select: {
-              title: "title",
-              slug: "slug.current",
-            },
-            resolve: (doc) => ({
-              locations: [
-                {
-                  title: doc?.title || "Untitled",
-                  href: resolveHref("post", doc?.slug)!,
-                },
-                homeLocation,
-              ],
-            }),
-          }),
-        },
-      },
-      previewUrl: { previewMode: { enable: "/api/draft-mode/enable" } },
-    }),
     structureTool({ structure: pageStructure([settings]) }),
     // Configures the global "new document" button, and document actions, to suit the Settings document singleton
     singletonPlugin([settings.name]),
